@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block nav %}
+<nav id="navmenu" class="navmenu">
+  <ul>
+      <li><a href="/" class="active">Home<br></a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/portfolio"><span>Portfolio</span></a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+</nav>
+{% endblock %}
+
+{% block main %}
+
+<main class="main">
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero section">
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
+          <h2><span>I'm </span><span class="underlight">Arc Nil Absalon</span> a Programmer<span> and AI Enthusiast from Philippines</span></h2>
+          <p>Combining my skills in Web/Software programming and AI development, I strive to develop advanced and impactful solutions for the digital world.</p>
+          <a href="contact.html" class="btn-get-started">Available for Hire<br></a>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- /Hero Section -->
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery section">
+
+    <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4 justify-content-center">
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="gallery-item h-100">
+            <img src="{{ url_for('static', filename='img/gallery/gallery-1.png')}}" class="img-fluid" alt="">
+            <div class="gallery-links d-flex align-items-center justify-content-center">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-1.png')}}" title="HBCV Mobile App" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+              <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Gallery Item -->
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="gallery-item h-100">
+            <img src="{{ url_for('static', filename='img/gallery/gallery-2.png')}}" class="img-fluid" alt="">
+            <div class="gallery-links d-flex align-items-center justify-content-center">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-2.png')}}" title="Text Generator" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+              <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Gallery Item -->
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="gallery-item h-100">
+            <img src="{{ url_for('static', filename='img/gallery/gallery-3.png')}}" class="img-fluid" alt="">
+            <div class="gallery-links d-flex align-items-center justify-content-center">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-3.png')}}" title="Face Generator" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+              <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Gallery Item -->
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="gallery-item h-100">
+            <img src="{{ url_for('static', filename='img/gallery/gallery-4.png')}}" class="img-fluid" alt="">
+            <div class="gallery-links d-flex align-items-center justify-content-center">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-4.png')}}" title="Employee Management System" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+              <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Gallery Item -->
+
+        
+
+      </div>
+
+    </div>
+
+  </section><!-- /Gallery Section -->
+
+</main>
+
+{% endblock %}

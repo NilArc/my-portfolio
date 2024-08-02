@@ -1,0 +1,185 @@
+{% extends "base.html" %}
+
+{% block nav %}
+<nav id="navmenu" class="navmenu">
+  <ul>
+      <li><a href="/">Home<br></a></li>
+      <li><a href="/about" class="active">About</a></li>
+      <li><a href="/portfolio"><span>Portfolio</span></a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+</nav>
+{% endblock %}
+
+{% block main %}
+
+<main class="main">
+
+  <!-- Page Title -->
+  <div class="page-title" data-aos="fade">
+    <div class="heading">
+      <div class="container">
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-lg-8">
+            <h1>About</h1>
+            <p class="mb-0">My projects span across Web, Mobile App, Software, and AI Development, where I've developed a variety of applications and solutions aimed at making a tangible impact in the digital landscape.</p>
+            <a href="contact.html" class="cta-btn">Available for Hire<br></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li class="current">About</li>
+        </ol>
+      </div>
+    </nav>
+  </div><!-- End Page Title -->
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4 justify-content-center">
+        <div class="col-lg-4">
+          <img src="{{ url_for('static', filename='img/profile-img.png') }}" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-5 content">
+          <h2>Programmer &amp; AI Enthusiast from Philippines.</h2>
+          <p class="fst-italic py-3">
+            I'm always open to new opportunities and collaborations. Here is the link of my <a href="">Resume</a>.
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>August 2001</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Iloilo City, Philippines</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>arc.absalon@gmail.com</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Open for Work:</strong> <span>Available</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Computer Science (AI)</span></li>
+              </ul>
+            </div>
+          </div>
+          
+
+          
+          
+          <p class="m-0">
+            My projects span across Python, Kaggle, Colaboratory, Jupyter Notebook, Java, C++, HTML/CSS/JS, Flask, PHP, CodeIgniter, Express JS, NodeJS, and SQL, where I've developed a variety of applications and solutions aimed at making a tangible impact in the digital landscape. Over the years, I've honed my skills through online coding session, problem-solving, and continuous learning.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section><!-- /About Section -->
+
+  <!-- more-me Section -->
+  <section id="more-me" class="more-me section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>More About Me</h2>
+      <p>What I Do Offline</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="swiper init-swiper">
+        <script type="application/json" class="swiper-config">
+          {
+            "loop": true,
+            "speed": 600,
+            "autoplay": {
+              "delay": 5000
+            },
+            "slidesPerView": "auto",
+            "pagination": {
+              "el": ".swiper-pagination",
+              "type": "bullets",
+              "clickable": true
+            },
+            "breakpoints": {
+              "320": {
+                "slidesPerView": 1,
+                "spaceBetween": 40
+              },
+              "1200": {
+                "slidesPerView": 3,
+                "spaceBetween": 1
+              }
+            }
+          }
+        </script>
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="about-item">
+              <p>
+                I like watching Anime. In fact, anime was the one gave me inspiratin to become a AI Developer.
+              </p>
+              <div class="profile mt-auto">
+                <img src="{{ url_for('static', filename='img/more/image-1.png') }}" class="about-img" alt="">
+                <h4>Anime</h4>
+              </div>
+            </div>
+          </div><!-- End item -->
+
+          <div class="swiper-slide">
+            <div class="about-item">
+              <p>
+                I read books too, specially the light novels.
+              </p>
+              <div class="profile mt-auto">
+                <img src="{{ url_for('static', filename='img/more/image-2.png') }}" class="about-img" alt="">
+                <h4>Light Novels</h4>
+              </div>
+            </div>
+          </div><!-- End item -->
+
+          <div class="swiper-slide">
+            <div class="about-item">
+              <p>
+                Walking around the park is one of my favorite past time. It helps me to reset my mind.
+              </p>
+              <div class="profile mt-auto">
+                <img src="{{ url_for('static', filename='img/more/image-3.png') }}" class="about-img" alt="">
+                <h4>Walking in A Park</h4>
+              </div>
+            </div>
+          </div><!-- End item -->
+
+          <div class="swiper-slide">
+            <div class="about-item">
+              <p>
+                Music is life. I listen to music when I'm coding, reading, or even walking.
+              </p>
+              <div class="profile mt-auto">
+                <img src="{{ url_for('static', filename='img/more/image-4.png') }}" class="about-img" alt="">
+                <h4>Listening to Music</h4>
+              </div>
+            </div>
+          </div><!-- End item -->
+
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+  </section><!-- /more-me Section -->
+
+</main>
+
+{% endblock %}
